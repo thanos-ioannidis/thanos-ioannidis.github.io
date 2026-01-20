@@ -1,80 +1,114 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ονοματεπώνυμο | Professional Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="navbar-container">
-    <a href="#home" class="logo">Ονοματεπώνυμο</a>
-    <ul class="navbar-menu" id="navbarMenu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme"></button>
-    <button class="hamburger" id="hamburgerBtn">
-      <span></span><span></span><span></span>
-    </button>
+<header class="site-header">
+  <div class="container header-grid">
+    <div class="logo">Your Name</div>
+
+    <nav class="primary-nav">
+      <a href="#value">What I do</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-</nav>
+</header>
 
 <main>
 
-<section id="home" class="hero reveal">
-  <h1>Καλώς ήρθατε</h1>
-  <p>Επαγγελματίας σε Web / UX / Product & Design</p>
-</section>
-
-<section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <p>Σύντομη επαγγελματική περιγραφή σε 2-3 γραμμές με λέξεις έντονης σημασίας (expertise, outcomes, value).</p>
-</section>
-
-<section id="skills" class="section reveal">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-    <span>React</span><span>UI/UX</span><span>Figma</span>
+<section class="hero">
+  <div class="container hero-grid">
+    <h1>
+      Building digital products and systems<br />
+      designed for scale, clarity and impact.
+    </h1>
+    <p>
+      Personal site inspired by enterprise product thinking,
+      focused on outcomes rather than decoration.
+    </p>
   </div>
 </section>
 
-<section id="projects" class="section reveal">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Project A</h3>
-    <p>Περιγραφή, τεχνολογίες και τι ρόλο έπαιξες.</p>
-  </div>
-  <div class="project-card">
-    <h3>Project B</h3>
-    <p>Περιγραφή, τεχνολογίες και επιτεύγματα.</p>
+<section id="value" class="block">
+  <div class="container two-col">
+    <h2>What I do</h2>
+    <p>
+      I work across design and technology to create
+      reliable, scalable and user-focused digital solutions.
+    </p>
   </div>
 </section>
 
-<section id="contact" class="section reveal">
-  <h2>Contact</h2>
-  <form id="contactForm" class="form" action="https://formspree.io/f/XXXXYYYY" method="POST" onsubmit="onFormSubmit(event)">
-    <div class="form-group">
-      <input type="text" name="name" required>
-      <label>Name</label>
+<section id="capabilities" class="block muted">
+  <div class="container grid-3">
+    <div>
+      <h3>Product Thinking</h3>
+      <p>Strategy, structure and decision-making driven by real use cases.</p>
     </div>
-    <div class="form-group">
-      <input type="email" name="email" required>
-      <label>Email</label>
+    <div>
+      <h3>Engineering</h3>
+      <p>Clean, maintainable front-end systems with long-term viability.</p>
     </div>
-    <div class="form-group">
-      <textarea name="message" required></textarea>
-      <label>Message</label>
+    <div>
+      <h3>UX & Interfaces</h3>
+      <p>Clear interfaces that prioritize comprehension and efficiency.</p>
     </div>
-    <button type="submit">Send Message</button>
-    <p id="successMsg" class="success">Message sent successfully!</p>
-  </form>
+  </div>
+</section>
+
+<section id="work" class="block">
+  <div class="container">
+    <h2>Selected work</h2>
+
+    <div class="work-list">
+      <div class="work-item">
+        <h4>Project One</h4>
+        <p>Short description focusing on value and outcome.</p>
+      </div>
+      <div class="work-item">
+        <h4>Project Two</h4>
+        <p>Short description focusing on value and outcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="block muted">
+  <div class="container contact-grid">
+    <h2>Contact</h2>
+
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/XXXXYYYY"
+      method="POST"
+      onsubmit="handleSubmit(event)"
+    >
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        <span>Message</span>
+        <textarea name="message" required></textarea>
+      </label>
+
+      <button type="submit">Send message</button>
+      <p class="form-success" id="successMsg">Message sent successfully.</p>
+    </form>
+  </div>
 </section>
 
 </main>
