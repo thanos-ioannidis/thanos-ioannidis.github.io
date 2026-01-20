@@ -12,7 +12,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
+  background: #f4f7fb;
 }
 
 /* Utility bar */
@@ -31,8 +31,7 @@ body {
 
 /* Main nav */
 .nav-shell {
-  background: #ffffff;
-  padding: 28px 24px;
+  padding: 24px;
 }
 
 .header.scrolled .nav-shell {
@@ -42,12 +41,13 @@ body {
 .nav-inner {
   max-width: 1440px;
   margin: auto;
-  background: #fff;
+  background: #ffffff;
   border-radius: 999px;
-  padding: 18px 32px;
+  padding: 20px 32px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
 .nav-center {
@@ -61,12 +61,33 @@ body {
   font-size: 14px;
   color: #0b0c0e;
   padding: 8px 0;
+  position: relative;
+}
+
+.nav-center a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #ff6a13; /* Infobip accent */
+  transition: width 0.2s ease;
+}
+
+.nav-center a:hover::after {
+  width: 100%;
 }
 
 .nav-left {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  gap: 12px;
 }
 
 .logo {
@@ -105,9 +126,7 @@ body {
 
 /* ===== CV ===== */
 .cv {
-  max-width: 960px;
-  margin: 0 auto 140px;
-  padding: calc(var(--header-height) + 40px) 24px 0;
+  padding-top: calc(var(--header-height) + 40px);
 }
 
 .cv-block {
@@ -172,9 +191,37 @@ body {
 }
 
 body {
-  background: #ffffff;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f4f7fb; /* ΑΠΑΛΟ ΓΚΡΙ */
+  color: #0b0c0e;
 }
 
 :root {
-  --header-height: 136px;
+  --header-height: 120px;
+}
+
+.btn {
+  font-size: 13px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+/* Contact */
+.btn.secondary {
+  background: #ffffff;
+  color: #0b0c0e;
+  border: 1px solid #c7cdd8;
+}
+
+/* Download CV */
+.btn.primary {
+  background: #0b0c0e;
+  color: #ffffff;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
 }
