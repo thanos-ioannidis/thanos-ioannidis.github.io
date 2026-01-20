@@ -225,3 +225,17 @@ body {
 .btn:hover {
   transform: translateY(-1px);
 }
+
+.header.scrolled {
+  background: #ffffff; /* εξαφανίζει το γκρι */
+}
+
+.header.scrolled .nav-shell {
+  padding: 0; /* κόβει το γύρω-γύρω */
+}
+
+.header.scrolled .nav-inner {
+  border-radius: 0; /* δεν είναι pill όταν κολλάει */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
