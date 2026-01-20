@@ -44,10 +44,10 @@ body {
   background: #ffffff;
   border-radius: 999px;
   padding: 20px 32px;
+
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
 .nav-center {
@@ -226,16 +226,7 @@ body {
   transform: translateY(-1px);
 }
 
-.header.scrolled {
-  background: #ffffff; /* εξαφανίζει το γκρι */
-}
-
-.header.scrolled .nav-shell {
-  padding: 0; /* κόβει το γύρω-γύρω */
-}
-
 .header.scrolled .nav-inner {
-  border-radius: 0; /* δεν είναι pill όταν κολλάει */
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.10);
 }
 
