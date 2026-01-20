@@ -1,46 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Το Βιογραφικό μου</title>
+  <title>Ονοματεπώνυμο</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Ονοματεπώνυμο Σου</h1>
-  <p class="subtitle">Επάγγελμα | Skills | Τοποθεσία</p>
-</header>
+<nav class="navbar">
+  <div class="logo">Ονοματεπώνυμο</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-<section class="about">
-  <h2>Σχετικά με εμένα</h2>
-  <p>Μια σύντομη περιγραφή για σένα — τί κάνεις, τι σου αρέσει, τι στόχους έχεις.</p>
+<main>
+
+<section class="hero">
+  <h1>Creative Developer</h1>
+  <p>Σχεδιάζω και υλοποιώ καθαρές ψηφιακές εμπειρίες.</p>
 </section>
 
-<section class="experience">
-  <h2>Εμπειρία</h2>
-  <div class="job">
-    <h3>Τίτλος Θέσης — Εταιρεία</h3>
-    <span>Χρονικό διάστημα</span>
-    <p>Περιγραφή ρόλου και επιτευγμάτων.</p>
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Είμαι δημιουργικός επαγγελματίας με έμφαση στο design,
+    τη λειτουργικότητα και την απλότητα.
+  </p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <span>2024 — σήμερα</span>
+    <h3>Τίτλος Θέσης</h3>
+    <p>Σύντομη περιγραφή ρόλου και αποτελεσμάτων.</p>
+  </div>
+
+  <div class="card">
+    <span>2022 — 2024</span>
+    <h3>Προηγούμενη Θέση</h3>
+    <p>Τι έκανες, τι έμαθες, τι δημιούργησες.</p>
   </div>
 </section>
 
-<section class="skills">
-  <h2>Skills</h2>
-  <p>HTML · CSS · JavaScript · Άλλα Skills</p>
+<section id="projects">
+  <h2>Projects</h2>
+
+  <ul class="projects">
+    <li>Project One — description</li>
+    <li>Project Two — description</li>
+    <li>Project Three — description</li>
+  </ul>
 </section>
 
-<section class="contact">
-  <h2>Επικοινωνία</h2>
-  <p>Email: example@email.com</p>
-  <p>LinkedIn: linkedin.com/in/username</p>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    <a href="mailto:email@email.com">email@email.com</a><br>
+    <a href="#">GitHub</a> · <a href="#">LinkedIn</a>
+  </p>
 </section>
 
 <footer>
-  <p>© 2026 Ονοματεπώνυμο Σου</p>
+  © 2026 Ονοματεπώνυμο
 </footer>
+
+</main>
 
 </body>
 </html>
