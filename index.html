@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanos Ioannidis</title>
+  <title>Thanos Ioannidis | Student of Business Administration</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">Ονοματεπώνυμο</div>
-  <ul>
+<nav class="nav">
+  <div class="brand">Ονοματεπώνυμο</div>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -22,14 +25,14 @@
 
 <section class="hero">
   <h1>Creative Developer</h1>
-  <p>Σχεδιάζω και υλοποιώ καθαρές ψηφιακές εμπειρίες.</p>
+  <p>Σχεδιάζω σύγχρονες, καθαρές ψηφιακές εμπειρίες.</p>
 </section>
 
 <section id="about">
   <h2>About</h2>
   <p>
-    Είμαι δημιουργικός επαγγελματίας με έμφαση στο design,
-    τη λειτουργικότητα και την απλότητα.
+    Είμαι δημιουργικός επαγγελματίας με έμφαση στη λεπτομέρεια,
+    τη λειτουργικότητα και το minimal design.
   </p>
 </section>
 
@@ -39,19 +42,18 @@
   <div class="card">
     <span>2024 — σήμερα</span>
     <h3>Τίτλος Θέσης</h3>
-    <p>Σύντομη περιγραφή ρόλου και αποτελεσμάτων.</p>
+    <p>Περιγραφή ρόλου και αποτελεσμάτων.</p>
   </div>
 
   <div class="card">
     <span>2022 — 2024</span>
     <h3>Προηγούμενη Θέση</h3>
-    <p>Τι έκανες, τι έμαθες, τι δημιούργησες.</p>
+    <p>Τι έκανες και τι έμαθες.</p>
   </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-
   <ul class="projects">
     <li>Project One — description</li>
     <li>Project Two — description</li>
@@ -61,10 +63,19 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>
-    <a href="mailto:email@email.com">email@email.com</a><br>
-    <a href="#">GitHub</a> · <a href="#">LinkedIn</a>
-  </p>
+
+  <!-- FORM -->
+  <form
+    action="https://formspree.io/f/XXXXYYYY"
+    method="POST"
+    class="contact-form"
+  >
+    <input type="text" name="name" placeholder="Όνομα" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Μήνυμα" required></textarea>
+    <button type="submit">Αποστολή</button>
+  </form>
+
 </section>
 
 <footer>
@@ -73,5 +84,6 @@
 
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
