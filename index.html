@@ -3,149 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name</title>
+  <title>Your Name – CV</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="global-header">
+<!-- ===== HEADER ===== -->
+<header class="header">
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="top-inner">
-      <div class="top-left">
-        <a href="#">Service status</a>
-        <a href="#">External connectivity status</a>
-        <a href="#">Startups</a>
-        <a href="#">Support center</a>
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="utility-left">
+        <span>Curriculum Vitae</span>
       </div>
-
-      <div class="top-right">
-        <button class="lang-btn">EN</button>
-        <a href="#" class="login-btn">Login</a>
+      <div class="utility-right">
+        <a href="mailto:you@email.com">Contact</a>
       </div>
     </div>
   </div>
 
-  <!-- MAIN NAV -->
-  <div class="nav-wrapper">
-    <div class="main-nav">
+  <!-- Main nav -->
+  <div class="nav-shell">
+    <div class="nav-inner">
       <div class="nav-left">
-        <div class="logo">YourName</div>
-
+        <div class="logo">Your Name</div>
         <nav class="nav-links">
-          <a href="#">Products</a>
-          <a href="#">Solutions</a>
-          <a href="#">Telecoms</a>
-          <a href="#">Partnerships</a>
-          <a href="#">Developers</a>
-          <a href="#">Company</a>
-          <a href="#">Pricing</a>
+          <a href="#profile">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
         </nav>
       </div>
 
       <div class="nav-right">
-        <button class="icon-btn" aria-label="Search">🔍</button>
-        <a href="#" class="btn primary">Try for free</a>
-        <a href="#" class="btn secondary">Contact us</a>
+        <a href="#" class="cta secondary">Download PDF</a>
       </div>
     </div>
   </div>
 
 </header>
 
-<main>
+<!-- ===== CV CONTENT ===== -->
+<main class="cv">
 
-<section class="hero">
-  <div class="container hero-grid">
-    <h1>
-      Building digital products and systems<br />
-      designed for scale, clarity and impact.
-    </h1>
-    <p>
-      Personal site inspired by enterprise product thinking,
-      focused on outcomes rather than decoration.
-    </p>
-  </div>
+<section id="profile" class="cv-block">
+  <h1>Your Name</h1>
+  <p class="title">Job Title / Professional Role</p>
+  <p class="summary">
+    Professional summary written in a concise, enterprise tone.
+    Focus on impact, scope, and expertise — όχι προσωπικές ιστορίες.
+  </p>
 </section>
 
-<section id="value" class="block">
-  <div class="container two-col">
-    <h2>What I do</h2>
-    <p>
-      I work across design and technology to create
-      reliable, scalable and user-focused digital solutions.
-    </p>
-  </div>
-</section>
+<section id="experience" class="cv-block">
+  <h2>Experience</h2>
 
-<section id="capabilities" class="block muted">
-  <div class="container grid-3">
-    <div>
-      <h3>Product Thinking</h3>
-      <p>Strategy, structure and decision-making driven by real use cases.</p>
+  <div class="cv-item">
+    <div class="cv-meta">
+      <span class="role">Senior Role</span>
+      <span class="period">2022 – Present</span>
     </div>
-    <div>
-      <h3>Engineering</h3>
-      <p>Clean, maintainable front-end systems with long-term viability.</p>
-    </div>
-    <div>
-      <h3>UX & Interfaces</h3>
-      <p>Clear interfaces that prioritize comprehension and efficiency.</p>
+    <div class="cv-content">
+      <strong>Company Name</strong>
+      <ul>
+        <li>Key responsibility or achievement</li>
+        <li>Outcome-focused bullet point</li>
+        <li>Technology / scope / scale</li>
+      </ul>
     </div>
   </div>
-</section>
 
-<section id="work" class="block">
-  <div class="container">
-    <h2>Selected work</h2>
-
-    <div class="work-list">
-      <div class="work-item">
-        <h4>Project One</h4>
-        <p>Short description focusing on value and outcome.</p>
-      </div>
-      <div class="work-item">
-        <h4>Project Two</h4>
-        <p>Short description focusing on value and outcome.</p>
-      </div>
+  <div class="cv-item">
+    <div class="cv-meta">
+      <span class="role">Previous Role</span>
+      <span class="period">2019 – 2022</span>
+    </div>
+    <div class="cv-content">
+      <strong>Company Name</strong>
+      <ul>
+        <li>Responsibility or impact</li>
+        <li>Measured result or scope</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="contact" class="block muted">
-  <div class="container contact-grid">
-    <h2>Contact</h2>
+<section id="skills" class="cv-block">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>Skill One</span>
+    <span>Skill Two</span>
+    <span>Skill Three</span>
+    <span>Skill Four</span>
+  </div>
+</section>
 
-    <form
-      class="contact-form"
-      action="https://formspree.io/f/XXXXYYYY"
-      method="POST"
-      onsubmit="handleSubmit(event)"
-    >
-      <label>
-        <span>Name</span>
-        <input type="text" name="name" required />
-      </label>
-
-      <label>
-        <span>Email</span>
-        <input type="email" name="email" required />
-      </label>
-
-      <label>
-        <span>Message</span>
-        <textarea name="message" required></textarea>
-      </label>
-
-      <button type="submit">Send message</button>
-      <p class="form-success" id="successMsg">Message sent successfully.</p>
-    </form>
+<section id="education" class="cv-block">
+  <h2>Education</h2>
+  <div class="cv-item">
+    <div class="cv-meta">
+      <span class="role">Degree Title</span>
+      <span class="period">2015 – 2019</span>
+    </div>
+    <div class="cv-content">
+      <strong>University Name</strong>
+    </div>
   </div>
 </section>
 
 </main>
 
-<script src="script.js"></script>
 </body>
 </html>
