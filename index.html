@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ονοματεπώνυμο</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="brand">Ονοματεπώνυμο</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><button id="themeToggle">🌙</button></li>
-  </ul>
+<nav class="navbar">
+  <div class="nav-inner">
+    <span class="logo">Ονοματεπώνυμο</span>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Dark mode"></button>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
 </nav>
 
 <main>
-  <section class="hero reveal">
-    <h1>Creative Professional</h1>
-    <p>Design · Technology · Simplicity</p>
-  </section>
 
-  <section class="reveal">
-    <h2>About</h2>
-    <p>
-      Δημιουργώ σύγχρονες ψηφιακές εμπειρίες με έμφαση
-      στη λειτουργικότητα και την αισθητική.
-    </p>
-  </section>
+<section id="home" class="hero reveal">
+  <h1>Creative Professional</h1>
+  <p>Design · Technology · Simplicity</p>
+</section>
 
-  <section class="reveal">
-    <h2>Experience</h2>
-    <p>Σύντομη παρουσίαση εμπειρίας και ρόλων.</p>
-  </section>
+<section id="about" class="reveal">
+  <h2>About</h2>
+  <p>
+    Δημιουργώ σύγχρονες ψηφιακές εμπειρίες με έμφαση
+    στη λειτουργικότητα, την καθαρή αισθητική και τη λεπτομέρεια.
+  </p>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Project One</h3>
+    <p>Σύντομη περιγραφή.</p>
+  </div>
+
+  <div class="project">
+    <h3>Project Two</h3>
+    <p>Σύντομη περιγραφή.</p>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/XXXXYYYY"
+    method="POST"
+    onsubmit="handleSubmit(event)"
+  >
+    <div class="field">
+      <input type="text" name="name" required />
+      <label>Όνομα</label>
+    </div>
+
+    <div class="field">
+      <input type="email" name="email" required />
+      <label>Email</label>
+    </div>
+
+    <div class="field">
+      <textarea name="message" required></textarea>
+      <label>Μήνυμα</label>
+    </div>
+
+    <button type="submit">Αποστολή</button>
+    <p class="success" id="successMsg">Το μήνυμα στάλθηκε ✔</p>
+  </form>
+</section>
+
 </main>
 
 <script src="script.js"></script>
