@@ -12,7 +12,12 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #f4f7fb;
+  padding-bottom: 16px;
+  background: linear-gradient(
+    to bottom,
+    #f4f7fb 70%,
+    rgba(244,247,251,0)
+      );
 }
 
 /* Utility bar */
@@ -38,16 +43,16 @@ body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
+.header.scrolled .nav-inner {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
 .nav-inner {
   max-width: 1440px;
   margin: auto;
   background: #ffffff;
   border-radius: 999px;
   padding: 20px 32px;
-
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
 }
 
 .nav-center {
