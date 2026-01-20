@@ -12,6 +12,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: #ffffff;
 }
 
 /* Utility bar */
@@ -30,9 +31,8 @@ body {
 
 /* Main nav */
 .nav-shell {
-  background: transparent;
+  background: #ffffff;
   padding: 28px 24px;
-  transition: box-shadow 0.2s ease;
 }
 
 .header.scrolled .nav-shell {
@@ -169,6 +169,10 @@ body {
   border: 1px solid #dfe3ea;
   padding: 10px 12px;
   font-size: 0.85rem;
+}
+
+body {
+  background: #ffffff;
 }
 
 :root {
