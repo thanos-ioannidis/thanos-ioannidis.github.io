@@ -31,12 +31,12 @@ body {
 /* Main nav */
 .nav-shell {
   background: transparent;
-  padding: 16px 24px;
+  padding: 20px 24px;
   transition: box-shadow 0.2s ease;
 }
 
 .header.scrolled .nav-shell {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
 .nav-inner {
@@ -44,7 +44,7 @@ body {
   margin: auto;
   background: #fff;
   border-radius: 999px;
-  padding: 14px 24px;
+  padding: 18px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +69,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   color: #0b0c0e;
+  padding: 8px 0;
 }
 
 /* CTA */
@@ -84,8 +85,8 @@ body {
 /* ===== CV ===== */
 .cv {
   max-width: 960px;
-  margin: 96px auto 140px;
-  padding: 0 24px;
+  margin: 0 auto 140px;
+  padding: calc(var(--header-height) + 40px) 24px 0;
 }
 
 .cv-block {
@@ -147,4 +148,8 @@ body {
   border: 1px solid #dfe3ea;
   padding: 10px 12px;
   font-size: 0.85rem;
+}
+
+:root {
+  --header-height: 136px;
 }
