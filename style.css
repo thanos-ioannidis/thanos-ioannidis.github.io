@@ -31,7 +31,7 @@ body {
 /* Main nav */
 .nav-shell {
   background: transparent;
-  padding: 20px 24px;
+  padding: 28px 24px;
   transition: box-shadow 0.2s ease;
 }
 
@@ -45,9 +45,22 @@ body {
   background: #fff;
   border-radius: 999px;
   padding: 18px 32px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0b0c0e;
+  padding: 8px 0;
 }
 
 .nav-left {
@@ -75,11 +88,19 @@ body {
 /* CTA */
 .cta {
   font-size: 13px;
-  padding: 10px 18px;
-  border-radius: 999px;
+  padding: 12px 20px;
   text-decoration: none;
-  border: 1px solid #c7cdd8;
-  color: #0b0c0e;
+  color: #ffffff;
+  background: #0b0c0e;
+
+  border-radius: 10px; /* όχι full pill */
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.cta:hover {
+  background: #1c1f24;
+  transform: translateY(-1px);
 }
 
 /* ===== CV ===== */
