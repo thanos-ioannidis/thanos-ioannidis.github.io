@@ -77,3 +77,34 @@ section {
   background: rgba(100, 255, 218, 0.1);
 }
 
+.section-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.experience-item {
+  margin-bottom: 48px;
+}
+
+.experience-item h3 {
+  font-size: 20px;
+}
+
+.experience-item h3 span {
+  color: var(--accent);
+}
+
+.period {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 8px 0 16px;
+}
+
+.experience-item ul {
+  padding-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 8px;
+  color: var(--muted);
+}
