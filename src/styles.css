@@ -24,3 +24,34 @@ section {
 --text: #ccd6f6;
 --muted: #8892b0;
 --accent: #64ffda;
+
+.hero {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 8vw, 80px);
+  color: var(--text);
+}
+
+.hero h1 span {
+  color: var(--muted);
+}
+
+.intro {
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.summary {
+  max-width: 540px;
+  color: var(--muted);
+  margin-top: 24px;
+}
