@@ -1,8 +1,8 @@
 body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
   margin: 0;
-  background: #0f172a;
-  color: #e5e7eb;
-  font-family: system-ui;
 }
 
 section {
