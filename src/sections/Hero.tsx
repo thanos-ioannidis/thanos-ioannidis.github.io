@@ -6,17 +6,22 @@ export default function Hero() {
       <h1>
         Thanos Ioannidis.
         <br />
-        <span>I build things for the web.</span>
+        <span>Senior Frontend Engineer.</span>
       </h1>
 
       <p className="summary">
-        Senior Frontend Engineer focused on building
-        scalable, accessible and high-quality web applications.
+        I build scalable, production-grade web applications
+        with React, TypeScript and modern UI architecture.
       </p>
 
-      <a className="cta" href="/resume.pdf">
-        Download Resume
-      </a>
+      <div className="actions">
+        <a href="#experience" className="btn primary">
+          View Experience
+        </a>
+        <a href="/resume.pdf" className="btn">
+          Download Resume
+        </a>
+      </div>
     </section>
   );
 }
