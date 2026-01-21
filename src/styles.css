@@ -37,23 +37,43 @@ section {
   justify-content: center;
 }
 
+.intro {
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
 .hero h1 {
   font-size: clamp(40px, 8vw, 80px);
-  color: var(--text);
+  line-height: 1.1;
 }
 
 .hero h1 span {
   color: var(--muted);
 }
 
-.intro {
-  color: var(--accent);
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-
 .summary {
   max-width: 540px;
   color: var(--muted);
   margin-top: 24px;
+  font-size: 18px;
 }
+
+.actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: rgba(100, 255, 218, 0.1);
+}
+
